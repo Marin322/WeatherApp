@@ -1,0 +1,76 @@
+.mainpage-container {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.mainpage-header {
+    width: 100%;
+    height: 8%;
+    background-color: var(--header-color);
+}
+
+.mainpage-main {
+    width: 100%;
+    height: 92%;
+    background-color: var(--main-body);
+    margin: 0px;
+    display: flex;
+}
+
+.weather-info-container {
+    width: 100%;
+    height: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.todayweather-container {
+    width: 600px;
+    height: 600px;
+    background-color: var(--weather-color);
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.todayweather-header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 15px;
+}
+
+.todayweather-header p {
+    font-size: 64px;
+    color: var(--text-main-color);
+    font-family: 'Cormorant+Infant';
+}
+
+.todayweather-header-icon {
+    width: 250px;
+    height: 200px;
+    background-color: black;
+}
+
+.todayweather-header-temperature {
+    width: 350px;
+    height: 100%;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.todayweather-precipitation {
+    width: 100%;
+    height: 75px;
+    font-size: 48px;
+    font-family: 'Cormorant+Infant';
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 15px;
+}
