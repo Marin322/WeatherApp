@@ -1,6 +1,10 @@
 :root {
-    --main-body: rgb(241, 241, 243);
+    --main-body: white;
+    --secondary-body: rgb(4, 13, 25, 0.3);
     --header-color: #eaeefb;
-    --weather-color: #dee2fc;
-    --text-main-color: #000000;
+    --weather-color: rgb(17, 23, 32, 0.85);
+    --characteristic-window-color: #242830;
+    --text-main-color: #ffffff;
+    --text-second-color: #878787;
+    --input-field: #34333c;
 }

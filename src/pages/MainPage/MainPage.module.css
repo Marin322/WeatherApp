@@ -1,3 +1,4 @@
+
 .mainpage-container {
     width: 100vw;
     height: 100vh;
@@ -16,61 +17,101 @@
     background-color: var(--main-body);
     margin: 0px;
     display: flex;
-}
-
-.weather-info-container {
-    width: 100%;
-    height: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 50px;
-    display: flex;
-    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 
 .todayweather-container {
-    width: 600px;
-    height: 600px;
+    width: 1600px;
+    height: 800px;
     background-color: var(--weather-color);
-    opacity: 0.8;
+    padding: 25px;
+    display: flex; 
+    gap: 25px; 
+    border-radius: 25px;
+}
+
+.todayweather-ui {
+    width: 500px;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todayweather-ui-location {
+    width: 485px;
+    height: 40px;
+    background-color: var(--input-field);
+    border-radius: 25px;
+    color: var(--text-main-color);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.todayweather-ui-maininfo {
+    width: 90%;
+    flex: 1; 
+    margin-top: 20px;
+    background-color: var(--secondary-body);
     border-radius: 25px;
     padding: 25px;
-}
-
-.todayweather-header {
-    width: 100%;
-    height: 200px;
     display: flex;
-    gap: 15px;
+    flex-direction: column;
 }
 
-.todayweather-header p {
-    font-size: 64px;
+.todayweather-ui-maininfo > p {
+    font-size: 80px;
     color: var(--text-main-color);
-    font-family: 'Cormorant+Infant';
+    margin: 0;
 }
 
-.todayweather-header-icon {
-    width: 250px;
-    height: 200px;
-    background-color: black;
+.todayweather-ui-maininfo p1 {
+    font-size: 40px;
+    color: var(--text-main-color);
+    margin-top: 10px;
 }
 
-.todayweather-header-temperature {
-    width: 350px;
-    height: 100%;
-    text-align: left;
-    margin-left: 25px;
-}
-
-.todayweather-precipitation {
-    width: 100%;
-    height: 75px;
-    font-size: 48px;
-    font-family: 'Cormorant+Infant';
+.todayweather-ui-maininfo > div:first-of-type {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.todayweather-ui-maininfo p2 {
+    font-size: 20px;
+    color: var(--text-main-color);
+    opacity: 0.8;
+}
+
+.todayweather-ui-secondinfo {
+    width: 100%;
+    flex: 1; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.characteristic-window {
+    width: calc(50% - 7.5px); 
+    min-height: 120px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-left: 50px;
-    margin-top: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.weekendweather-ui {
+    flex: 1; 
+    background-color: var(--weekend-weather-bg, #3a4b5c);
+    border-radius: 25px;
+    padding: 25px;
 }
